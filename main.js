@@ -80,9 +80,8 @@ let domString='';
 for(let i = 0; i <pets.length; i++){
    domString += `<div class="pets">`;
    domString += `<h2>${pets[i].name}</h2>`;
-   domString += `<img src ''>${pets[i].imageURL}`;
+   domString += `<img src>${pets[i].imageURL}`;
    domString += `<h3>${pets[i].type}</h3>`;
-   domString += `<img src = >`;
    domString +=`</div>`;
 }
     const printToDom = (divId,textToPrint) => {
