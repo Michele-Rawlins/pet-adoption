@@ -74,24 +74,26 @@ console.log(pets);
 
 
 
-const buildPetCards = () => {
+const petCards = () => {
 
 let domString='';
 for(let i = 0; i <pets.length; i++){
    domString += `<div class="pets">`;
-   domString += `<h2>${pets[i].name}</h2>`;
-   domString += `<img src>${pets[i].imageURL}`;
-   domString += `<h3>${pets[i].type}</h3>`;
+   domString += `<h1>${pets[i].name}</h1>`;
+   domString += `<img src="${pets[i].imageURL}">`;
+   domString += `<h3><br>${pets[i].color}</h3>`;
+   domString += `<h3>${pets[i].specialSkill}</h3>`;
+   domString += `<button>${pets[i].type}</button>`;
    domString +=`</div>`;
 }
     const printToDom = (divId,textToPrint) => {
      const selectedDiv = document.getElementById(divId);
     selectedDiv.innerHTML = textToPrint;
     }
-    printToDom('pets',domString );
+    printToDom('mypets',domString );
 };
 
-buildPetCards();
+petCards();
 
 
 
