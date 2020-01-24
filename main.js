@@ -80,7 +80,7 @@ let domString='';
 for(let i = 0; i <pets.length; i++){
    domString += `<div class="pets">`;
    domString += `<h1>${pets[i].name}</h1>`;
-   domString += `<img class="images" src="${pets[i].imageURL}">`;
+   domString += `<img src="${pets[i].imageURL}">`;
    domString += `<h3><br>${pets[i].color}</h3>`;
    domString += `<h3>${pets[i].specialSkill}</h3>`;
    domString += `<button>${pets[i].type}</button>`;
